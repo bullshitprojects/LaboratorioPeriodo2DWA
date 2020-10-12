@@ -57,10 +57,65 @@
         </div>       
     </nav>
 
+    <!--Formulario de contacto-->
+    <div class="container mt-5">
+        <h1 class="mb-5 text-center">Formulario de contacto</h1>
+        <form class="needs-validation" novalidate>
+          <div class="row justify-content-md-center">
+            <div class="col-md-4 mb-3">
+              <label for="firstName">Nombres</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Campo requerido
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="lastName">Apellidos</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Campo requerido
+              </div>
+            </div>
+          </div>
 
-     <!--Componente: Footer-->
-  <footer>
-    <div class="container mt-5" style="background-color: #E74C3C;">
+          <div class="row justify-content-md-center">
+            <div class="col-md-8 mb-3">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="nombre@correo.com">
+              <div class="invalid-feedback">
+                Por favor ingresa un correo válido
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-md-center mb-3">
+            <div class="col-md-8">
+              <label for="comment">Comentario</label>
+              <textarea id="comment" class="form-control" placeholder="Dinos tus comentarios" rows="7"></textarea>
+            </div>
+          </div>
+
+          <div class="row justify-content-md-center mb-5">
+            <div class="col-md-8">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="save-info">
+                <label class="custom-control-label" for="save-info">Deseo recibir ofertas y promociones</label>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-2">
+              <button class="btn btn-primary btn-block mb-5" type="submit">Enviar</button>
+            </div>
+          </div>            
+        </form>
+      </div>
+
+    </div>
+
+    <!--Componente: Footer-->
+  <footer style="background-color: #E74C3C;">
+    <div class="container mt-5">
       <div class="row">
         <div class="col-sm mb-5">
           <h2 class="mt-5 text-center text-white">Mapa del sitio</h2><br>
